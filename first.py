@@ -17,7 +17,7 @@ def get_articles_from_lenta(create_item):
 
 def save_json(file_name, obj):
     with open(file_name, "w", encoding="utf8") as items:
-        json.dump(obj, items, ensure_ascii=False, separators=(",\n", ": "))
+        json.dump(obj, items, ensure_ascii=False, indent=2)
 
 
 def create_news(leaf):
